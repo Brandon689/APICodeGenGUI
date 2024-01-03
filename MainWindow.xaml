@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button Content="text clipboard" Click="text_clipboard_replace_click"/>
+        <Button Grid.Column="1" Content="filepath" Click="filepath_clipboard_replace_click"/>
     </Grid>
 </Window>
